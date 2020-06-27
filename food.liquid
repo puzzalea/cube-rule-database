@@ -1,0 +1,25 @@
+---
+pagination:
+  data: collections.food
+  size: 1
+  alias: item
+permalink: "{{ item.name | parameterize }}/"
+---
+
+<p><a href="/">Back</a></p>
+
+<h1>{{ item.name | titleize }}</h1>
+
+{% for tag in item.tags %}
+  <p>
+    {{ item.with_article | capitalize }} is 
+    {% for category in collections.categories %}
+      {% if tag == category.tag %}
+        {{ category.with_article }}.
+      {% endif %}
+    {% endfor %}
+    {% if item[tag] %}
+      <br>- {{ item[tag] }}
+    {% endif %}
+  </p>
+{% endfor %}
