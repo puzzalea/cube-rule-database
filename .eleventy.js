@@ -58,6 +58,8 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents));
 
+  eleventyConfig.addPassthroughCopy('.nojekyll');
+
   return {
     templateFormats : ['liquid'],
   }
