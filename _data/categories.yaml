@@ -1,32 +1,24 @@
-toast:
-  name: toast
+- name: toast
   tag: toast
   with_article: toast
-sandwich:
-  name: sandwich
+- name: sandwich
   tag: sandwich
   with_article: a sandwich
-taco:
-  name: taco
+- name: taco
   tag: taco
   with_article: a taco
-sushi:
-  name: sushi
+- name: sushi
   tag: sushi
   with_article: sushi
-bread_bowl:
-  name: bread bowl
+- name: bread bowl
   tag: bread_bowl
   with_article: a bread bowl
-dumpling:
-  name: dumpling
+- name: dumpling
   tag: dumpling
   with_article: a dumpling
-rice:
-  name: rice
+- name: rice
   tag: rice
   with_article: rice
-salad:
-  name: salad
+- name: salad
   tag: salad
   with_article: a salad

@@ -17,9 +17,7 @@ module.exports = eleventyConfig => {
 
   // Add categories collection
   eleventyConfig.addCollection('categories', collection => {
-    const categoriesObject = collection.items[0].data.categories;
-
-    return Object.values(categoriesObject);
+    return collection.items[0].data.categories;
   });
 
   // Add collection for each category
